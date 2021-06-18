@@ -61,15 +61,7 @@ app.post('/webhook', (req, res) => {
                 let w_value_verb = changes.value.verb;
                 let w_value_reaction_type = changes.value.reaction_type;
                 console.log(field, pageID, webhook_time);
-                login({ access_token: "EAAcfesqguzMBAKIMZAPpHpj9NdLAezkqCG9g8zmwRhcWvudsEhtwZBO2cYlp56kia3BIzbZBu1N8WGOTVq5eXvJnXY9YZCXmvnVsdBmwAmrZACyYrpLzrr8ewrZCucKcrMWmmZCIr5C6nEvJJgLYIFdSruoqAnTLKuqZBQgzaZBHsHtf6usdwnlKs" }, (err, api) => {
-                    if (err) return console.error(err);
-            
-                    api.listen((err, event) => {
-            
-                        api.sendComment({ body: entry.changes }, event.idReplyTo)
-                        api.addFriend({ body: entry.changes }, event.idReplyTo)
-                    });
-                });
+              
                 //console.log(changes);
                 if (field == "feed") {
                     if (item === "comment") {
@@ -97,7 +89,7 @@ function processComments(comment, messagetext) {
         comment_id = comment.comment_id;
     }
     console.log("id_comment : " + comment_id);
-    const login = require("facebook-comment-api");
+   
   
     let ConLN = /หวย/g;
     let NUMLN = /^S\d/gi;
