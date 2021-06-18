@@ -1,27 +1,34 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+//import Login from '../pages/login/login';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>สุ่มเสี่ยง LOTTO</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://www.facebook.com/101988411153554">สุ่มเสี่ยง LOTTO</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        อาณาจักร api{' '}
+          <code className={styles.code}>by PNCK@SKT</code>
         </p>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
+            
+             
+      
+        
+      
+      
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
@@ -56,8 +63,8 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Powered by{' '} สุ่มเสี่ยง LOTTO DEV APP
+          <img src="https://www.img.in.th/images/e5a2ebeda0c82aa997ed1d420fc2142f.png" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
