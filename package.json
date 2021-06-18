@@ -3,13 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev && node ./pages/api/server.js",
+    "dev": "next dev && node server.js",
     "build": "next build",
     "start": "next start && cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "next": "10.x",
     "react": "17.x",
-    "react-dom": "17.x"
+    "react-dom": "17.x",
+    "express": "^4.16.4",
+    "fb": "^2.0.0",
+    "fb-messenger": "^2.3.1",
+    "fb-messenger-bot-api": "^4.4.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.18.3",
+    "canvas": "^2.8.0",
+    "canvas-text-wrapper": "^0.10.2"
   }
 }
